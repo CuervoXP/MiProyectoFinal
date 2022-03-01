@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <!--Tipografias-->
+    <!--Cinzel-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!--Raleway, Yeseva, Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;200;300;400;500&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <!--Llamada a estilos-->
+    <link rel="stylesheet" href="css/nexo.css">
+</head>
+<body>
+    <span class="nav-bar" id="btnMenu"><img src="img/menu.svg" alt="" class="menu-icon"></span>
+    <nav class="nav">
+        <div class="contenedor-nav">
+            <div class="div-logo">
+                <a href="index.html" class="Logo"><img src="img/Group 2.svg" alt="Khanzas Calzas"></a>
+            </div>
+
+            <div class="navegación">
+                <ul class="menu" id="menu">
+                    <li class="menu__item"><a href="index.html" class="menu__link">INICIO</a></li>
+                    <li class="menu__item container-submenu">
+                        <a href="calzas.html" class="menu__link submenu-btn">CALZAS<img src="img/abajo.svg" alt=""
+                                class="abajo-icon"></a>
+                        <ul class="submenu">
+                            <li class="menu__item"><a href="#" class="menu__link">Calza 1</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Calza 2</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Calza 3</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Calza 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="carrito.html" class="menu__link">CARRITO</a></li>
+                    <li class="menu__item"><a href="mi_cuenta.html" class="menu__link">MI CUENTA</a></li>
+                    <li class="menu__item"><a href="contacto.html" class="menu__link">CONTACTO</a></li>
+                </ul>
+
+            </div>
+            <a href="carrito.html"><img src="img/carrito-de-compras.png" alt="carrito" class="logo-carrito"></a>
+        </div>
+    </nav>
+    <header>
+        <div class="header-contenedor">
+            <div class="header-contenedor__texto">
+                <h4>EL MEJOR OUTFIT</h4>
+                <h5>PARA ESTA TEMPORADA</h5>
+                <p>Colección Primavera - Verano</p>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="novedades__section">
+            <div class="novedades-titulo">
+                <p>Novedades</p>
+            </div>
+            <div class="contenedor-cards">
+
+            </div>
+        </section>
+    </main>
+    <template id="template-card">
+        <div class="card">
+            <img src="" alt="">
+            <p class="titulo-calza">Calza</p>
+            <p class="card__precio-novedades">$5.500</p>
+
+            <button class="boton-comprar">COMPRAR</button>
+
+        </div>
+    </template>
+    <div id="main-container">
+
+        <table>
+            <thead>
+                <tr>
+                    
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Sumar/Restar</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="items">
+
+            </tbody>
+            <tfoot id="footer">
+                <th>Carrito vacío :(</th>
+            </tfoot>
+        </table>
+    </div>
+    <template id="template-carrito">
+        <tr>
+            
+            <td>nombre</td>
+            <td>cantidad</td>
+            <td>
+                <button id="boton-sumar" class="sumar">+</button><button id="boton-restar" class="restar">-</button>
+            </td>
+            <td>Total</td>
+        </tr>
+    </template>
+    <template id="template-footer">
+        <th>Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="vaciar-todo" id="vaciar-carrito">
+                vaciar todo
+            </button>
+        </td>
+        <td class="precio-footer">$ <span>5000</span></td>
+    </template> 
+
+    <script src="carrito.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

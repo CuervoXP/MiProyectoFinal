@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cuenta</title>
+    <!--Tipografias-->
+    <!--Cinzel-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!--Raleway, Yeseva, Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;200;300;400;500&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <!--Llamada a estilos-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nexo.css">
+</head>
+
+<body>
+
+    <span class="nav-bar" id="btnMenu"><img src="img/menu.svg" alt="" class="menu-icon"></span>
+    <nav class="nav">
+        <div class="contenedor-nav">
+            <div class="div-logo">
+                <a href="index.html" class="Logo"><img src="img/Group 2.svg" alt="Khanzas Calzas"></a>
+            </div>
+
+            <div class="navegación">
+                <ul class="menu" id="menu">
+                    <li class="menu__item"><a href="index.html" class="menu__link">INICIO</a></li>
+                    <li class="menu__item container-submenu">
+                        <a href="calzas.html" class="menu__link submenu-btn">CALZAS<img src="img/abajo.svg" alt=""
+                                class="abajo-icon"></a>
+                        <ul class="submenu">
+                            <li class="menu__item"><a href="#" class="menu__link">Calza 1</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Calza 2</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Calza 3</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Calza 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="carrito.html" class="menu__link">CARRITO</a></li>
+                    <li class="menu__item"><a href="mi_cuenta.html" class="menu__link">MI CUENTA</a></li>
+                    <li class="menu__item"><a href="contacto.html" class="menu__link">CONTACTO</a></li>
+                </ul>
+
+            </div>
+            <a href="carrito.html"><img src="img/carrito-de-compras.png" alt="carrito" class="logo-carrito"></a>
+        </div>
+    </nav>
+<div class="margin-top">
+    <h2 >REGISTRATE</h2>
+</div>
+    
+    <div class="contenedor-formulario">
+        <main class="main__mi-cuenta">
+            <form action="" class="formulario" id="formulario">
+                <div class="formulario__grupo" id="grupo__usuario">
+                    <label for="usuario" class="formulario__label">Usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Jose14">
+                        
+                    </div>
+                    <p class="formulario__input-texto-error"> El usuario debe ser de 5 a 16 digitos y solo puede
+                        contener números letras y guion bajo</p>
+                </div>
+
+
+                <div class="formulario__grupo" id="grupo__contraseña">
+                    <label for="contraseña" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="contraseña" id="contraseña">
+                        
+                    </div>
+                    <p class="formulario__input-texto-error"> La contraseña debe ser de 4 a 12 digitos</p>
+                </div>
+
+
+                <div class="formulario__grupo" id="grupo__contraseña2">
+                    <label for="contraseña2" class="formulario__label">Repetir Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="contraseña2" id="contraseña2">
+                        
+                    </div>
+                    <p class="formulario__input-texto-error"> La contraseña debe ser exactamente igual </p>
+                </div>
+
+
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los terminos y condiciones
+                    </label>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fa-solid fa-circle-exclamation"></i>Error: Debe completar cada campo del formulario</p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-enviado">El formulario se envió correctamente </p>
+                </div>
+
+
+            </form>
+        </main>
+    </div>
+
+
+
+
+    <script src="mi_cuenta.js"></script>
+    <script src="https://kit.fontawesome.com/1715ed94b7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

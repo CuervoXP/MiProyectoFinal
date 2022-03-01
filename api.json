@@ -1,0 +1,26 @@
+[
+    {
+        "precio": 150,
+        "id": 1,
+        "nombre": "Calza Under",
+        "img": "img/catalogo/calza1.jpg"
+    },
+    {
+        "precio": 100,
+        "id": 2,
+        "nombre": "Calza Legging",
+        "img": "img/catalogo/calza2.jpg"
+    },
+    {
+        "precio": 170,
+        "id": 3,
+        "nombre": "Calza Heatgear",
+        "img": "img/catalogo/calza3.jpg"
+    },
+    {
+        "precio": 200,
+        "id": 4,
+        "nombre": "Calza Lana",
+        "img": "img/catalogo/calza4.jpg"
+    }
+]

@@ -1,0 +1,17 @@
+@import "variables";
+@import "nav";
+@import "header";
+@import "main";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $Raleway;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
